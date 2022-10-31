@@ -1,8 +1,6 @@
-import time
 import main
 import PySimpleGUI as sg
 from tkinter import messagebox
-import pyautogui
 def interfaceHab():
     telaInicial = [
         [sg.Text("Selecione a resolução da sua tela")],
@@ -12,10 +10,10 @@ def interfaceHab():
         [sg.Text("Não mova o mouse durante o processo!")],
         [sg.Button("FULL HD (1920 X 1080)"),sg.Button("HD (1280 x 720)")]
         ]
-    
+
     janela = sg.Window("INSTITUTO MIX", telaInicial, finalize=True, right_click_menu=sg.MENU_RIGHT_CLICK_EDITME_VER_EXIT)
     
-        
+
     while True:
         evento, valores = janela.read()
         if evento == sg.WIN_CLOSED or evento == "Cancelar":
