@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 import main
+import hab
 import sis
 from time import sleep
 from tkinter import messagebox
@@ -34,7 +35,7 @@ while resposta == True:
             main.habilitar()
             break
         if evento == "Habilitar Online - Sistema Interativo":
-            main.habOnline()
+            hab.interfaceHab()
             break
         if evento == "Configurar Gerenciador":
             main.gerenciadorAt()
